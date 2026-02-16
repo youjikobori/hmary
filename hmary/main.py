@@ -3,6 +3,8 @@ import os
 from dotenv import load_dotenv
 import getpass
 
+import version_checker
+
 #config .env
 load_dotenv()
 
@@ -25,8 +27,8 @@ clearTerminal()
 # Main:
 def main():
 	logo()
-
-	print('Hi')
+	version_checker.check_version()
+	print(' ')
 	choice=input('>> ')
 
 if __name__ == '__main__':
