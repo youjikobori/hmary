@@ -1,4 +1,4 @@
-# HMary
+# HMary-SmartHomeAssistant
 
 HMary is a Telegram bot for controlling your smart home. 
 
