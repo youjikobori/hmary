@@ -2,6 +2,7 @@ from aiogram import Bot, Dispatcher, html
 import os
 from dotenv import load_dotenv
 import getpass
+from pydantic import ConfigDict
 
 import version_checker
 
@@ -29,7 +30,7 @@ def main():
 	logo()
 	version_checker.check_version()
 	print(' ')
-	choice=input('>> ')
+	choice=input(' >> ')
 
 if __name__ == '__main__':
 	main()
