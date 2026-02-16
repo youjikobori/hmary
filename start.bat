@@ -1,2 +1,3 @@
-cd C:\Users\VLRZZ\Desktop\hmary\hmary
+cd hmary
+
 python main.py
