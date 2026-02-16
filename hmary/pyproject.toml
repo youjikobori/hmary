@@ -1,0 +1,4 @@
+[project]
+name = "HMary-SmartHomeAssistant"
+version = "BETA 0.0.0.1a"
+description = "Telegram bot for precise and global control of your smart home"
