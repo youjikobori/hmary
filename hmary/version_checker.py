@@ -11,7 +11,7 @@ def check_version():
     print(f" Welcome!\n Current version of the project: {current}")
     
     # GitHub-Api Checker
-    try:a
+    try:
         r = requests.get("https://api.github.com/repos/youjikobori/hmary/releases/latest", timeout=5)
         if r.status_code == 200:
             latest = r.json()["tag_name"]
@@ -20,8 +20,8 @@ def check_version():
                 if input(" Would you like to update? (Y/n): ").lower() == 'y':
                     webbrowser.open(r.json()["html_url"])
             else:
-                input(" You have the latest version of the program\n Press [ENTER] to continue")
+                input(" You have the latest version of the program\n\n Press [ENTER] to continue")
         else:
-            input(" Unable to check for updates\n Press [ENTER] to continue")
+            input(" Unable to check for updates\n\n Press [ENTER] to continue")
     except:
-        input(" Unable to check for updates\n Press [ENTER] to continue")
+        input(" Unable to check for updates\n\n Press [ENTER] to continue")
